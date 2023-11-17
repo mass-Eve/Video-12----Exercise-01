@@ -8,7 +8,7 @@ Note -> There are several parameter that can also be written inside a print() fu
 
 Indentation
 
-Indentation refers to the spaces at the beginning of a code. In many other programming languages, Indentation is used for just increasing the readability of the code, but in case of python, Indentation plays a vital and important role in the codebase as it denotes a block of code. And yeah also it contributes in readability of the code as well.
+Indentation refers to the spaces at the beginning of a code. In many other programming languages, Indentation is used for just increasing the readability of the code, but in case of python, Indentation plays a vital and important role in the codebase as it denotes a block of code. And yeah, it also contributes in the readability of the code as well.
 
 What if I don't give indentations?
 In such case, an Indentation Error will be generated.
