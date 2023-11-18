@@ -58,9 +58,9 @@ Tokens in python are classified in the following ~
 
 #### 02. Identifiers
 
-        Identifiers are the name (or unique-identification) given to user-defined customs like variables, functions etc.. whose meaning and functionality are decided by the programmer.
+    Identifiers are the name (or unique-identification) given to user-defined customs like variables, functions etc.. whose meaning and functionality are decided by the programmer.
 
-        Since Python is a case-sensitive language, it has some rules and regulations to name an identifier. 
+    Since Python is a case-sensitive language, it has some rules and regulations to name an identifier. 
     
 -------------------------------------------------------------------------
 
