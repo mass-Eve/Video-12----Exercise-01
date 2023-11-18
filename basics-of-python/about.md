@@ -41,13 +41,16 @@ There are various types of token ~
 01. Keywords
 
         Keywords can be defined as words that are identified specially by a programming language, words that have a special meaning pre-defined in that programming language. 
+
         They can’t be used as variable names, function names, or any other random purpose. 
+        
         They are used for their special features. 
         In Python we have 33 keywords in total.
 
 02. Identifiers
 
     Identifiers are the name (or unique-identification) given to user-defined customs like variables, functions etc.. whose meaning and functionality are decided by the programmer.
+
     Since Python is a case-sensitive language, it has some rules and regulations to name an identifier. 
     
     Here are some rules to name an identifier:-
@@ -65,34 +68,35 @@ There are various types of token ~
     Literals are the items that have a fixed value in a python-script.
     There are different types of literals in python ~ 
 
-    03(a). String Literals
+    a). String Literals
     
-    03(b). Numeric Literals
+    b). Numeric Literals
     
-    03(c). Boolean Literals
+    c). Boolean Literals
     
-    03(d). Special Literals
+    d). Special Literals
 
 04. Operators
 
-    They represent tokens which are used to perform arithmatic calculations.
-    They can be unary or binary.
+        They represent tokens which are used to perform arithmatic calculations.
+        They can be unary or binary.
 
     Operands 
 
-    They are the variables or the values on which the operation happens.
+        They are the variables or the values on which the operation happens.
     
     Unary Operators
 
-    They act on a single operand.
+        They act on a single operand.
 
     Binary Operators
-    They require atleast two operands.
+
+        They require atleast two operands.
 
 05. Punctuators
 
-    These are the tokens (or symbols) that are used in Python to organize the structures, statements, and expressions. 
-    Some of the Punctuators are: [ ] { } ( ) @  -=  +=  *=  //=  **==  = , etc.
+        These are the tokens (or symbols) that are used in Python to organize the structures, statements, and expressions. 
+        Some of the Punctuators are: [ ] { } ( ) @  -=  +=  *=  //=  **==  = , etc.
 
 <!-- Variables & Their Declaration
 
