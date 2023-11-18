@@ -26,6 +26,8 @@ In python, there are two types of comments.
 
     Multiple Line Comments are declared using triple single quotes.
     
+---------------------------------------------------------------------
+
     # This is a single line comment
     ''' This is also a single line comment '''
 
