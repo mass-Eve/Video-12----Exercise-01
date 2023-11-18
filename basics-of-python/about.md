@@ -17,9 +17,10 @@ Comments
 
     Comments are some special line of codes or code blocks which are written for the programmer itself. These lines though included in the code but they are not interpreted as code and they are not run by the interpreter. They are written for future references or for other programmers to enable them to understand the code easily.
 
-    In python, there are two types of comments.
+Declaring Comments
 
-    Single Line Comments | Multiple Line Comments
+In python, there are two types of comments.
+        Single Line Comments | Multiple Line Comments
 
     Single Line Comments are decalred either using pound symbol or a hash (#) Or by a pair of triple single quotes
 
