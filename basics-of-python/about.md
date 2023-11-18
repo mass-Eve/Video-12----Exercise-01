@@ -48,13 +48,13 @@ Tokens in python are classified in the following ~
 
 #### 01. Keywords
 
-        Keywords can be defined as words that are identified specially by a programming language, words that have a special meaning pre-defined in that programming language. 
+    Keywords can be defined as words that are identified specially by a programming language, words that have a special meaning pre-defined in that programming language. 
 
-        They can’t be used as variable names, function names, or any other random purpose. 
+    They can’t be used as variable names, function names, or any other random purpose. 
         
-        They are used for their special features. 
+    They are used for their special features. 
 
-        In Python we have 33 keywords in total.
+    In Python we have 33 keywords in total.
 
 #### 02. Identifiers
 
@@ -64,41 +64,44 @@ Tokens in python are classified in the following ~
     
 -------------------------------------------------------------------------
 
-        Here are some rules to name an identifier:-
+Here are some rules to name an identifier:-
 
-        a) Python is case-sensitive. So the case in which the identification is written matters in naming the identifiers. And hence ankur and Ankur are two different identifiers.
+    a) Python is case-sensitive. So the case in which the identification is written matters in naming the identifiers. And hence ankur and Ankur are two different identifiers.
 
-        b) They can either start from lower-case-alphabets or upper-case-alphabets. 
+    b) They can either start from lower-case-alphabets or upper-case-alphabets. 
 
-        c) No identifier should start with a number or a special character.
+    c) No identifier should start with a number or a special character.
 
-        d) A integer is allowed in between the name of the idetifier, but the identifier itself cannot start with a number.
+    d) A integer is allowed in between the name of the idetifier, but the identifier itself cannot start with a number.
             Example -> num1 ✅ || 1num❌
 
-        e) The only special character that is allowed in the names of an identifier is underscore (_)
+    e) The only special character that is allowed in the names of an identifier is underscore (_)
 
-        f) An identifier can't be a keyword.
+    f) An identifier can't be a keyword.
 
 #### 03. Literals
 
         Literals are the items that have a fixed value in a python-script.
     
-        There are different types of literals in python ~ 
+There are different types of literals in python ~ 
 
-        a). String Literals
+    a). String Literals
         
-        b). Numeric Literals
+    b). Numeric Literals
         
-        c). Boolean Literals
+    c). Boolean Literals
         
-        d). Special Literals
+    d). Special Literals
 
 #### 04. Operators & Operands
 
-        Operators are the tokens which are used to perform arithmatic calculations.
-        They can be unary or binary.
+    Operators are the tokens which are used to perform arithmatic calculations.
+    
+    They can be unary or binary.
 
-        Operands are the variables or the values on which the operation happens.
+-------------------------------------------------------------------------
+
+    Operands are the variables or the values on which the operation happens.
     
         a) Unary Operators
 
@@ -110,8 +113,8 @@ Tokens in python are classified in the following ~
 
 #### 05. Punctuators
 
-        These are the tokens (or symbols) that are used in Python to organize the structures, statements, and expressions. 
-        Some of the Punctuators are: [ ] { } ( ) @  -=  +=  *=  //=  **==  = , etc.
+    These are the tokens (or symbols) that are used in Python to organize the structures, statements, and expressions. 
+    Some of the Punctuators are: [ ] { } ( ) @  -=  +=  *=  //=  **==  = , etc.
 
 <!-- Variables & Their Declaration
 
