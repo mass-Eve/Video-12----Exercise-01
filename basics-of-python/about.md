@@ -81,7 +81,7 @@ Here are some rules to name an identifier:-
 
 #### 03. Literals
 
-        Literals are the items that have a fixed value in a python-script.
+    Literals are the items that have a fixed value in a python-script.
     
 There are different types of literals in python ~ 
 
