@@ -20,7 +20,8 @@ Comments
 Declaring Comments
 
 In python, there are two types of comments.
-        Single Line Comments | Multiple Line Comments
+
+Single Line Comments | Multiple Line Comments
 
     Single Line Comments are decalred either using pound symbol or a hash (#) Or by a pair of triple single quotes
     
