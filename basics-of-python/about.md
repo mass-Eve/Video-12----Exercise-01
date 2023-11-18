@@ -40,10 +40,10 @@ There are various types of token ~
 
 01. Keywords
 
-    Keywords can be defined as words that are identified specially by a programming language, words that have a special meaning pre-defined in that programming language. 
-    They can’t be used as variable names, function names, or any other random purpose. 
-    They are used for their special features. 
-    In Python we have 33 keywords in total.
+        Keywords can be defined as words that are identified specially by a programming language, words that have a special meaning pre-defined in that programming language. 
+        They can’t be used as variable names, function names, or any other random purpose. 
+        They are used for their special features. 
+        In Python we have 33 keywords in total.
 
 02. Identifiers
 
