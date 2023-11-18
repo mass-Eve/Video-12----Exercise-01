@@ -36,17 +36,17 @@ Single Line Comments | Multiple Line Comments
     This is a multiple line comment
     '''
 
-Python Character Set
+### Python Character Set
 
     A character set is a set of valid characters acceptable by a programming language in scripting.
 
-Token
+### Token
 
     A token is the smallest individual unit in a python program. All statements and instructions in a program are built with tokens.
 
 Tokens in python are classified in the following ~
 
-01. Keywords
+#### 01. Keywords
 
         Keywords can be defined as words that are identified specially by a programming language, words that have a special meaning pre-defined in that programming language. 
 
@@ -56,7 +56,7 @@ Tokens in python are classified in the following ~
 
         In Python we have 33 keywords in total.
 
-02. Identifiers
+#### 02. Identifiers
 
         Identifiers are the name (or unique-identification) given to user-defined customs like variables, functions etc.. whose meaning and functionality are decided by the programmer.
 
@@ -79,7 +79,7 @@ Tokens in python are classified in the following ~
 
         f) An identifier can't be a keyword.
 
-03. Literals
+#### 03. Literals
 
         Literals are the items that have a fixed value in a python-script.
     
@@ -93,7 +93,7 @@ Tokens in python are classified in the following ~
         
         d). Special Literals
 
-04. Operators & Operands
+#### 04. Operators & Operands
 
         Operators are the tokens which are used to perform arithmatic calculations.
         They can be unary or binary.
@@ -108,7 +108,7 @@ Tokens in python are classified in the following ~
 
             They require atleast two operands.
 
-05. Punctuators
+#### 05. Punctuators
 
         These are the tokens (or symbols) that are used in Python to organize the structures, statements, and expressions. 
         Some of the Punctuators are: [ ] { } ( ) @  -=  +=  *=  //=  **==  = , etc.
