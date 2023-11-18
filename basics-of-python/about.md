@@ -28,8 +28,6 @@ In python, there are two types of comments.
     ''' This is also a single line comment '''
 
 ---------------------------------------------------------------------
-    
-<!-- --------------------------------------------------------------------- -->
 
     Multiple Line Comments are declared using triple single quotes.
 
@@ -45,7 +43,7 @@ Token
 
     A token is the smallest individual unit in a python program. All statements and instructions in a program are built with tokens.
 
-There are various types of token ~
+Tokens in python are classified in the following ~
 
 01. Keywords
 
@@ -54,53 +52,60 @@ There are various types of token ~
         They can’t be used as variable names, function names, or any other random purpose. 
         
         They are used for their special features. 
+
         In Python we have 33 keywords in total.
 
 02. Identifiers
 
-    Identifiers are the name (or unique-identification) given to user-defined customs like variables, functions etc.. whose meaning and functionality are decided by the programmer.
+        Identifiers are the name (or unique-identification) given to user-defined customs like variables, functions etc.. whose meaning and functionality are decided by the programmer.
 
-    Since Python is a case-sensitive language, it has some rules and regulations to name an identifier. 
+        Since Python is a case-sensitive language, it has some rules and regulations to name an identifier. 
     
-    Here are some rules to name an identifier:-
+-------------------------------------------------------------------------
 
-    a) Python is case-sensitive. So the case in which the identification is written matters in naming the identifiers. And hence ankur and Ankur are two different identifiers.
-    b) They can either start from lower-case-alphabets or upper-case-alphabets. 
-    c) No identifier should start with a number or a special character.
-    d) A integer is allowed in between the name of the idetifier, but the identifier itself cannot start with a number.
-        Example -> num1 ✅ || 1num❌
-    e) The only special character that is allowed in the names of an identifier is underscore (_)
-    f) An identifier can't be a keyword.
+        Here are some rules to name an identifier:-
+
+        a) Python is case-sensitive. So the case in which the identification is written matters in naming the identifiers. And hence ankur and Ankur are two different identifiers.
+
+        b) They can either start from lower-case-alphabets or upper-case-alphabets. 
+
+        c) No identifier should start with a number or a special character.
+
+        d) A integer is allowed in between the name of the idetifier, but the identifier itself cannot start with a number.
+            Example -> num1 ✅ || 1num❌
+
+        e) The only special character that is allowed in the names of an identifier is underscore (_)
+
+        f) An identifier can't be a keyword.
 
 03. Literals
 
-    Literals are the items that have a fixed value in a python-script.
-    There are different types of literals in python ~ 
-
-    a). String Literals
+        Literals are the items that have a fixed value in a python-script.
     
-    b). Numeric Literals
-    
-    c). Boolean Literals
-    
-    d). Special Literals
+        There are different types of literals in python ~ 
 
-04. Operators
+        a). String Literals
+        
+        b). Numeric Literals
+        
+        c). Boolean Literals
+        
+        d). Special Literals
 
-        They represent tokens which are used to perform arithmatic calculations.
+04. Operators & Operands
+
+        Operators are the tokens which are used to perform arithmatic calculations.
         They can be unary or binary.
 
-    Operands 
-
-        They are the variables or the values on which the operation happens.
+        Operands are the variables or the values on which the operation happens.
     
-    Unary Operators
+        a) Unary Operators
 
-        They act on a single operand.
+            They act on a single operand.
 
-    Binary Operators
+        b) Binary Operators
 
-        They require atleast two operands.
+            They require atleast two operands.
 
 05. Punctuators
 
