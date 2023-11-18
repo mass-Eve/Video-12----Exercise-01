@@ -125,4 +125,3 @@ There are different types of literals in python ~
 Example -:
     <var-name> = value
 Note -> The values should only be assigned from the rigt side. -->
-
