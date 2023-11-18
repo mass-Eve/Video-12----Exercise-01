@@ -23,15 +23,15 @@ In python, there are two types of comments.
         Single Line Comments | Multiple Line Comments
 
     Single Line Comments are decalred either using pound symbol or a hash (#) Or by a pair of triple single quotes
-
-    Multiple Line Comments are declared using triple single quotes.
     
----------------------------------------------------------------------
-
     # This is a single line comment
     ''' This is also a single line comment '''
 
+---------------------------------------------------------------------
     
+<!-- --------------------------------------------------------------------- -->
+
+    Multiple Line Comments are declared using triple single quotes.
 
     ''' 
     This is a multiple line comment
