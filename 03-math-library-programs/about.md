@@ -6,7 +6,7 @@
 
 * To use a function or a method present in a library, we write it in this way -
 
-        module-name.method-name()
+        <module-name>.<method-name>(<argument>)
 
 Some math module functions that are most widely used are -~
 
