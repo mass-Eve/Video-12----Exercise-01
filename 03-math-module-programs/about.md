@@ -50,6 +50,7 @@ Syntax
 
 07. Greatest Common Divisor : This method returns the gcd of two integers 
 Syntax
+
         math.gcd(x, y)
 
         where x & y are the two numbers whose gcd needs to be find.
