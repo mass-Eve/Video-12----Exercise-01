@@ -1,4 +1,4 @@
-                        Type Casting In Python
+                                    Type Casting In Python
 
 * Type casting in python is a method of converting values of one data-type to another data type, if possible.
 
