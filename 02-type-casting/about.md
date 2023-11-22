@@ -80,7 +80,6 @@ There are a bunch of things that are needed to be kept in mind while performing 
 
         >>> "5.36" || <class 'string'>
 
----------------------------------------------------------------------
 
     e) string values to integer and floating-point values.
 
@@ -94,7 +93,7 @@ There are a bunch of things that are needed to be kept in mind while performing 
 
         >>> 5.0 || <class 'float'>
 
-
+---------------------------------------------------------------------
 
         a = "5"
         print(a, " || ", type(a))
