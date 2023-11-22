@@ -80,7 +80,7 @@ Syntax
         math.isclose(x, y)
 
 
-12. Degrees to Radians : This methof converts the angle-in-degrees to angle-in-radians.
+12. Degrees to Radians : This method converts the angle-in-degrees to angle-in-radians.
 Syntax
 
         math.degrees()
