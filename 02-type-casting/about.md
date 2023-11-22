@@ -67,7 +67,6 @@ There are a bunch of things that are needed to be kept in mind while performing 
 
     c) floating-point value to a integer value.
 
----------------------------------------------------------------------
     
     d) floating-point value to a string value.
     
@@ -81,6 +80,7 @@ There are a bunch of things that are needed to be kept in mind while performing 
 
         >>> "5.36" || <class 'string'>
 
+---------------------------------------------------------------------
 
     e) string values to integer and floating-point values.
 
