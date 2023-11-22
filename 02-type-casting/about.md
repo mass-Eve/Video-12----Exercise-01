@@ -83,6 +83,8 @@ There are a bunch of things that are needed to be kept in mind while performing 
 
     e) string values to integer and floating-point values.
 
+        // string to integer
+
         a = "5"
         print(a, " || ", type(a))
 
@@ -93,7 +95,7 @@ There are a bunch of things that are needed to be kept in mind while performing 
 
         >>> 5.0 || <class 'float'>
 
-        
+        // string to floating-point
 
         a = "5"
         print(a, " || ", type(a))
