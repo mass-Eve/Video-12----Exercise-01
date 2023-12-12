@@ -117,8 +117,9 @@ There are a bunch of things that are needed to be kept in mind while performing 
 
 -------------------------------------------------
 
+    Note -
         // important one
-        
+
         name = 'ankur'
         printf(name, " || ", type(name))
 
