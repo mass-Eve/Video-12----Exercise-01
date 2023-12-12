@@ -1,4 +1,4 @@
-There are a bunch of ways in which we can imporvise our prorgams.
+There are a bunch of ways in which we can improve our prorgams.
 
 But it is important to know why improvisations are important?
 01. To me personally, I believe that there is always a scope for improvisations.
