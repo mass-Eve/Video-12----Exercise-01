@@ -10,12 +10,14 @@ Sequential Statements || Selective Statements (also known as Conditional Stateme
 * This means that a block of code will be executed if and only if the condition above it, is True! And if the condition is found to be False, either some other block of code will be executed, or nothing will happen.
 ------------------------------------------
 
-                    Types Of if-else ladders
 * There are **__3__** types of if-else-ladder ~
 
 01. only **_if_** statement.
 02. both **_if_** & **_else_** statement.
 03. one **_if_** statement followed by **_elif_** statement(s) and an **_else_** clause in the end.
+
+* and **_2_** types of shorthand if-else ~
+
 04. shorthand **_if_**
 05. shorthand **_if-else_**
 
@@ -82,3 +84,7 @@ Sequential Statements || Selective Statements (also known as Conditional Stateme
         Manytimes, we will be in positions when we don't actually know what condition to put inside an if statement or what to pass in else clause if we encounter an error. In such cases, we use **_pass_** keyword. As named, it will tell the interpreter to DO NOTHING! And when you come up with an idea about how you will resolve this thing, you can remove the pass and write the condition there.
 
     04. You can always nest the if-else statements according to your problems.
+
+
+
+                    Introduction To switch(case)
