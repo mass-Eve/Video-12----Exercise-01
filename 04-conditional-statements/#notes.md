@@ -1,4 +1,4 @@
-                    Introduction To if-else ladder
+                                        Introduction To if-else ladder
 * Statements in any programming langauge can be classified into three types ~ 
 
 Sequential Statements || Selective Statements (also known as Conditional Statements) || Iteration (or looping)
@@ -87,4 +87,4 @@ Sequential Statements || Selective Statements (also known as Conditional Stateme
 
 
 
-                    Introduction To switch(case)
+                                        Introduction To switch(case)
