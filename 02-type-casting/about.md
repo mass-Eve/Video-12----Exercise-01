@@ -67,7 +67,17 @@ There are a bunch of things that are needed to be kept in mind while performing 
 
     c) floating-point value to a integer value.
 
+        a = 5.6
+        print(a, " || ", type(a))
+
+        >>> 5.6 || <class 'float'>
     
+        b = int(a)
+        print(b, " || ", type(b))
+
+        >>> "5" || <class 'int'>
+        <!-- Noticw how it removes the decimal part of the original value. -->
+        
     d) floating-point value to a string value.
     
         a = 5.36
@@ -90,10 +100,10 @@ There are a bunch of things that are needed to be kept in mind while performing 
 
         >>> "5" || <class 'string'>
 
-        b = float(a)
+        b = int(a)
         print(b, " || ", type(b))
 
-        >>> 5.0 || <class 'float'>
+        >>> 5 || <class 'int'>
 
         // string to floating-point
 
@@ -102,7 +112,17 @@ There are a bunch of things that are needed to be kept in mind while performing 
 
         >>> "5" || <class 'string'>
 
-        b = int(a)
+        b = float(a)
         print(b, " || ", type(b))
 
-        >>> 5 || <class 'int'>
+        >>> 5.0 || <class 'float'>
+
+        name = 'ankur'
+        printf(name, " || ", type(name))
+
+        >>> 'ankur' || <class 'string'>
+
+        name = int(name) or float(name)
+        printf(name, " || ", type(name))
+
+        >>> ValueError: invalid literal for int() or float()
