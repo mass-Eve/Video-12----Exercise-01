@@ -6,17 +6,13 @@
 
 Implicit Typecasting || Explicit Typecasting
 
-* Implicit Typecasting
+01. **_Implicit Typecasting_** : Implicit Typecasting is the type-casting done automatically by the python interpreter.
 
-    Implicit Typecasting is the type-casting done automatically by the python interpreter.
+02. **_Explicit Typecasting_** : Explicit Typecasting is the manual process of converting value of one data-type into other, if possible.
 
-* Explicit Typecasting
+_Note_ - There is a function called **_type()_** function in python, that can tell us the data-type of any value.
 
-    Explicit Typecasting is the manual process of converting value of one data-type into other, if possible.
-
-Note - There is a function called type() function in python, that can tell us the data-type of any value.
-
-Syntax Of Usage -
+**_Syntax Of Usage -_**
 
     a = 5
     printf( type(a) )
@@ -35,7 +31,9 @@ Syntax Of Usage -
 
     >>> <class 'string'>
 
-There are a bunch of things that are needed to be kept in mind while performing explicit types-casting.
+-------------------------------------------------
+
+There are a bunch of things that are needed to be kept in mind while performing explicit typecasting.
 
 01. It is not mandatory that whatever type-casting you are trying to do will surely happen! So make sure what you are type-casting into.
 
@@ -117,6 +115,10 @@ There are a bunch of things that are needed to be kept in mind while performing 
 
         >>> 5.0 || <class 'float'>
 
+-------------------------------------------------
+
+        // important one
+        
         name = 'ankur'
         printf(name, " || ", type(name))
 
