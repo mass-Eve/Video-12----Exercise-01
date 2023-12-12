@@ -115,8 +115,6 @@ There are a bunch of things that are needed to be kept in mind while performing 
 
         >>> 5.0 || <class 'float'>
 
--------------------------------------------------
-    Note -
 
         // important one
 
