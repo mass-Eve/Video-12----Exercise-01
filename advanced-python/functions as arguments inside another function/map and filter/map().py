@@ -6,7 +6,5 @@ def map_key(item):
     return item*2
 
 print(list(map(map_key, l)))
-print(l)
-
-sqs = [i*2 for i in range(10)]
-print(sqs)
+# or
+print(list(map(lambda item: item * 2, l)))
