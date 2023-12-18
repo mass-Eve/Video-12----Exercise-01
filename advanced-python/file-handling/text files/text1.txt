@@ -1,0 +1,1 @@
+This file was created because the write method didn't found a file with similar id to write content in it 

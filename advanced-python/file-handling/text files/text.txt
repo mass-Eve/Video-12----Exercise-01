@@ -1,0 +1,5 @@
+This is the day 04 of revisioning python.
+So far I have come to text file handling.
+6131
+abc
+Write this content in the file
