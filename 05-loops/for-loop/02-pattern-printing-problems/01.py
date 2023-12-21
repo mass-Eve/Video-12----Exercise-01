@@ -1,9 +1,9 @@
 '''
-*
-* * 
-* * *
-* * * *
-* * * * *
+        *
+        * * 
+        * * *
+        * * * *
+        * * * * *
 '''
 rows = int(input('Enter the number of rows you want in the pattern: '))
 
