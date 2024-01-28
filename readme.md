@@ -1,4 +1,4 @@
-# Python Programming Language Learning Journey
+# Python Programming Language
 
 Welcome to my Python Programming language learning repository! 🚀 Here, I document my journey as I delve into the world of Python programming.
 
