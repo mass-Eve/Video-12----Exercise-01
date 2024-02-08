@@ -11,4 +11,3 @@ print('The type of data in decimal variable is: ',type(decimal))
 print('The type of data in character variable is: ',type(character))
 print('The type of data in bool_true variable is:',type(bool_True))
 print('The type of data in bool_false variable is:',type(bool_False))
-

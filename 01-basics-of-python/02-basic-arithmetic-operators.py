@@ -19,4 +19,3 @@ print("Num2 raised to Num1 is: ", num1**num2)
 
 print("Floor division of num1//num2 is: ", num1//num2)
 print("Floor division of num2//num1 is: ", num2//num1)
-

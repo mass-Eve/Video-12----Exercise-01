@@ -1,4 +1,4 @@
-A print() function is used to print the data on the terminal screen
+*print()* function is used to print the data on the terminal screen
 
 ### Syntax Of print() function
 
