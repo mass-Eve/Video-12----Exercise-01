@@ -28,7 +28,7 @@ class ATM:
         elif user_input == 4:
             self.withdraw()
         elif user_input == 5:
-            self.check()
+            self.check_balance()
         elif user_input == 6:
             print("\t\t\tVISIT US AGAIN. BYE.......")
             exit(0)
@@ -61,13 +61,20 @@ class ATM:
         amt = int(input("Enter the amount to be withdrawn from your bank account : "))
 
         pin = int(input("Enter your pin : "))
-        if (pin == self.pin):
+        if (pin == self.pin and (self.balance - amt) > 0 ):
             self.balance -= amt
             print(f"Rs. {amt} WITHDRAWED SUCCESSFULLY FROM YOUR BANK ACCOUNT")
         else:
-            print("WRONG PIN! Please try again later ........")
+            if (pin != self.pin):
+                print("WRONG PIN! Please try again later ........")
+            else:
+                print("INSUFFICIENT BALANCE")
 
-    def check(self):
-        print(f"Your current balance is : Rs {self.balance}")
+    def check_balance(self):
+        pin = int(input("Enter your ATM pin :"))
+        if (pin == self.pin):
+            print(f"Your current balance is : Rs {self.balance}")
+        else:
+            print("Invalid PIN!")
 
 sbi = ATM()
