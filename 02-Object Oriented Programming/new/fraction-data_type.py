@@ -59,9 +59,19 @@ class Fraction:
 
     # to divide two fractions
     def __truediv__(self, *other):
-        result_nr = self.nr * other.dr
-        result_dr = self.dr * other.nr
-        return f"{result_nr}/{result_dr}"
+
+        try:
+            result_nr = self.nr
+            result_dr = self.dr
+
+            for fraction in other:
+                result_nr = result_nr * fraction.dr
+                result_dr = result_dr * fraction.nr
+                
+            return Fraction(result_nr, result_dr)
+
+        except Exception as e:
+            print(e)
 
 
 x = Fraction(2, 3)
@@ -79,3 +89,4 @@ print(b)
 print(x + y + a + b)
 print(x - y - a - b)
 print(x * y * a * b)
+print(x / y / a / b)
