@@ -26,9 +26,20 @@ class Fraction:
 
     # to subtract two fractions
     def __sub__(self, *other):
-        result_nr = self.nr * other.dr - self.dr * other.nr
-        result_dr = self.dr * other.dr
-        return f"{result_nr}/{result_dr}"
+
+        try:
+            result_nr = self.nr
+            result_dr = self.dr
+
+            # iterate through every tuple of fraction numbers
+            for fraction in other:
+                result_nr = (result_nr * fraction.dr) - (fraction.nr * result_dr)
+                result_dr = result_dr * fraction.dr
+
+            return Fraction(result_nr, result_dr)
+
+        except Exception as e:
+            print(e)
 
     # to multiply two fractions
     def __mul__(self, *other):
@@ -49,17 +60,11 @@ print(x)
 y = Fraction(4, 5)
 print(x)
 
-# print(x + y)
-# print(x - y)
-# print(x * y)
-# print(x / y)
-
 a = Fraction(6, 7)
 print(a)
 
 b = Fraction(8, 9)
 print(b)
 
-# print(x * y * a * b )
-
 print(x + y + a + b)
+print(x - y - a - b)
