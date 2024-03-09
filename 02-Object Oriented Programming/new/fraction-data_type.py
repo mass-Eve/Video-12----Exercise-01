@@ -43,9 +43,19 @@ class Fraction:
 
     # to multiply two fractions
     def __mul__(self, *other):
-        result_nr = self.nr * other.nr
-        result_dr = self.dr * other.dr
-        return f"{result_nr}/{result_dr}"
+
+        try:
+            result_nr = self.nr
+            result_dr = self.dr
+
+            for fraction in other:
+                result_nr *= fraction.nr
+                result_dr *= fraction.dr
+                
+            return Fraction(result_nr, result_dr)
+
+        except Exception as e:
+            print(e)
 
     # to divide two fractions
     def __truediv__(self, *other):
@@ -68,3 +78,4 @@ print(b)
 
 print(x + y + a + b)
 print(x - y - a - b)
+print(x * y * a * b)
