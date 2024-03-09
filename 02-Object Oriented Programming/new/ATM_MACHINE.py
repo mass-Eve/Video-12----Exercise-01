@@ -1,7 +1,7 @@
 class ATM:
     def __init__(self):
-        self.pin = 1234
-        self.balance = 0
+        self.__pin = 1234
+        self.__balance = 0
 
         self.menu()
 
@@ -36,13 +36,13 @@ class ATM:
             print("CHECK YOUR INPUT AND TRY AGAIN .........")
 
     def createPin(self):
-        self.pin = int(input("Enter your pin here : "))
+        self.__pin = int(input("Enter your pin here : "))
         print("PIN SET SUCCESSFULLY")
     
     def updatePin(self):
         verify = int(input("Enter your current ATM PIN : "))
-        if (verify == self.pin):
-            self.pin = int(input("Enter your new pin : "))
+        if (verify == self.__pin):
+            self.__pin = int(input("Enter your new pin : "))
             print("PIN UPDATED SUCCESSFULLY")
         else:
             print("WRONG PIN! Please try again later ........")
@@ -51,8 +51,8 @@ class ATM:
         amt = int(input("Enter the amount to be deposited in your bank account : "))
 
         pin = int(input("Enter your pin : "))
-        if (pin == self.pin):
-            self.balance += amt
+        if (pin == self.__pin):
+            self.__balance += amt
             print(f"Rs. {amt} DEPOSITED SUCCESSFULLY IN YOUR BANK ACCOUNT")
         else:
             print("WRONG PIN! Please try again later ........")
@@ -61,19 +61,19 @@ class ATM:
         amt = int(input("Enter the amount to be withdrawn from your bank account : "))
 
         pin = int(input("Enter your pin : "))
-        if (pin == self.pin and (self.balance - amt) > 0 ):
-            self.balance -= amt
+        if (pin == self.__pin and (self.__balance - amt) > 0 ):
+            self.__balance -= amt
             print(f"Rs. {amt} WITHDRAWED SUCCESSFULLY FROM YOUR BANK ACCOUNT")
         else:
-            if (pin != self.pin):
+            if (pin != self.__pin):
                 print("WRONG PIN! Please try again later ........")
             else:
                 print("INSUFFICIENT BALANCE")
 
     def check_balance(self):
         pin = int(input("Enter your ATM pin :"))
-        if (pin == self.pin):
-            print(f"Your current balance is : Rs {self.balance}")
+        if (pin == self.__pin):
+            print(f"Your current balance is : Rs {self.__balance}")
         else:
             print("Invalid PIN!")
 
