@@ -1,5 +1,4 @@
 class ATM:
-
     # a static variable to store the count of total bank accounts assosciated with this branch
     total_accounts = 0
     
@@ -13,6 +12,7 @@ class ATM:
         # assigning that value as the account number of that account
         self.__accountNumber = 100000 + ATM.total_accounts
 
+        # Calling the menu as soon as an instance is created
         self.menu()
 
     def menu(self):
@@ -20,7 +20,7 @@ class ATM:
         ------------------------------------------------------------------
                                     WELCOME
                         HOW WOULD YOU LIKE TO PROCEED ?
-                        0. ENTER 0 TO SEE YOUR ACCOUNT NUMBER
+                        0. ENTER 0 TO SEE YOUR ACCOUNT BALANCE
                         1. ENTER 1 TO CREATE NEW PIN
                         2. ENTER 2 TO CHANGE YOUR EXISTING PIN
                         3. ENTER 3 TO DEPOSIT CASH
@@ -29,71 +29,112 @@ class ATM:
                         6. ENTER 6 TO EXIT
         ------------------------------------------------------------------
                         ENTER YOUR CHOICE HERE ~ '''))
-        if user_input == 0:
-            self.displayAccountHolderDetails()
-        elif user_input == 1:
-            self.createPin()
-        elif user_input == 2:
-            self.updatePin()
-        elif user_input == 3:
-            self.deposit()
-        elif user_input == 4:
-            self.withdraw()
-        elif user_input == 5:
-            self.check_balance()
-        elif user_input == 6:
-            print("\t\t\tVISIT US AGAIN. BYE.......")
-            exit(0)
-        else:
-            print("CHECK YOUR INPUT AND TRY AGAIN .........")
 
+        match user_input:
+            case 0:
+                self.displayAccountHolderDetails()
+            case 1:
+                self.createPin()
+            case 2:
+                self.updatePin()
+            case 3:
+                self.deposit()
+            case 4:
+                self.withdraw()
+            case 5:
+                self.check_balance()
+            case 6:
+                print("\t\t\tVISIT US AGAIN. BYE.......")
+                exit(0)
+            case _:
+                print("CHECK YOUR INPUT AND TRY AGAIN .........")
+
+    # A method to display the details of the account holder
     def displayAccountHolderDetails(self):
-        temp = int(input("Verify your pin please : "))
-        if (self.__pin == temp):
-            print(f'ACCOUNT NUMBER : {self.__accountNumber}')
-            print(f'CURRENT BALANCE : {self.__balance}')
-        else:
-            print("WRONG PIN! CANNOT ACCESS YOUR DETAILS AT THE MOMENT!")
 
-    def createPin(self):
-        self.__pin = int(input("Enter your pin here : "))
-        print("PIN SET SUCCESSFULLY")
-    
-    def updatePin(self):
-        verify = int(input("Enter your current ATM PIN : "))
-        if (verify == self.__pin):
-            self.__pin = int(input("Enter your new pin : "))
-            print("PIN UPDATED SUCCESSFULLY")
-        else:
-            print("WRONG PIN! Please try again later ........")
+        try:
+            temp = int(input("Verify your pin please : "))
 
-    def deposit(self):
-        amt = int(input("Enter the amount to be deposited in your bank account : "))
-
-        pin = int(input("Enter your pin : "))
-        if (pin == self.__pin):
-            self.__balance += amt
-            print(f"Rs. {amt} DEPOSITED SUCCESSFULLY IN YOUR BANK ACCOUNT")
-        else:
-            print("WRONG PIN! Please try again later ........")
-
-    def withdraw(self):
-        amt = int(input("Enter the amount to be withdrawn from your bank account : "))
-        pin = int(input("Enter your pin : "))
-        if (pin == self.__pin and (self.__balance - amt) > 0 ):
-            self.__balance -= amt
-            print(f"Rs. {amt} WITHDRAWED SUCCESSFULLY FROM YOUR BANK ACCOUNT")
-        else:
-            if (pin != self.__pin):
-                print("WRONG PIN! Please try again later ........")
+            if (self.__pin == temp):
+                print(f'ACCOUNT NUMBER : {self.__accountNumber}')
+                print(f'CURRENT BALANCE : {self.__balance}')
             else:
-                print("INSUFFICIENT BALANCE")
+                print("WRONG PIN! CANNOT ACCESS YOUR DETAILS AT THE MOMENT!")
 
+        except Exception as e:
+            print(f"Can not process your request at the moment due to the following error ~\n{str(e)}")
+
+    # A method to create ATM PIN for the newly alloted/issued ATM CARDS
+    def createPin(self):
+
+        try:
+            self.__pin = int(input("Enter your pin here : "))
+            print("PIN SET SUCCESSFULLY")
+        except Exception as e:
+            print(f"Can not create your ATM PIN right now due to the following error ~\n{str(e)}")
+
+    # A method to update the existing ATM PIN
+    def updatePin(self):
+
+        try:
+            temp_pin = int(input("Enter your current ATM PIN : "))
+
+            if (temp_pin == self.__pin):
+                self.__pin = int(input("Enter your new pin : "))
+                print("PIN UPDATED SUCCESSFULLY")
+            else:
+                print("WRONG PIN! Please try again later ........")
+
+        except Exception as e:
+            print(f"Can not update your ATM PIN at this moment due to the following error ~\n{str(e)}")
+
+    # A method to help the user deposit money in the bank account
+    def deposit(self):
+
+        try:
+            amt = int(input("Enter the amount to be deposited in your bank account : "))
+            temp_pin = int(input("Enter your ATM PIN : "))
+
+            if (temp_pin == self.__pin):
+                self.__balance += amt
+                print(f"Rs. {amt} DEPOSITED SUCCESSFULLY IN YOUR BANK ACCOUNT")
+            else:
+                print("WRONG PIN! Please try again later ........")
+
+        except Exception as e:
+            print(f"Can not deposit money in the bank at this moment due to the following error ~\n{str(e)}")
+
+    # A method to help the user in withdrawing money from his bank account
+    def withdraw(self):
+
+        try:
+            amt = int(input("Enter the amount to be withdrawn from your bank account : "))
+            temp_pin = int(input("Enter your pin : "))
+
+            if (temp_pin == self.__pin and (self.__balance - amt) > 0 ):
+                self.__balance -= amt
+                print(f"Rs. {amt} WITHDRAWED SUCCESSFULLY FROM YOUR BANK ACCOUNT")
+            else:
+                if (temp_pin != self.__pin):
+                    print("WRONG PIN! Please try again later ........")
+                else:
+                    print("INSUFFICIENT BALANCE")
+
+        except Exception as e:
+            print(f"Can not withdraw the money because of the following error ~ \n{str(e)}")
+
+    # A method to check the balance in the bank account
     def check_balance(self):
-        pin = int(input("Enter your ATM pin :"))
-        if (pin == self.__pin):
-            print(f"Your current balance is : Rs {self.__balance}")
-        else:
-            print("Invalid PIN!")
+
+        try:
+            temp_pin = int(input("Enter your ATM pin :"))
+
+            if (temp_pin == self.__pin):
+                print(f"Your current balance is : Rs {self.__balance}")
+            else:
+                print("Invalid PIN!")
+
+        except Exception as e:
+            print(f"Can not check the balance due to the following error ~\n{str(e)}")
 
 sbi = ATM()
