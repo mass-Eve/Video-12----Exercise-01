@@ -122,12 +122,14 @@ class Book:
             self.quantities_available = total_available
 
     def checkAvaiablility(self):
-        if (quantities_available > total_copies):
+        if (self.quantities_available > 0 and self.quantities_available <= self.total_copies):
             print(f'Total copies available to borrow are : {self.quantities_available}')
             print("YES YOU CAN BORROW THIS BOOK !")
+            return True
         else:
             print(f'Total copies available to borrow are : {self.quantities_available}')
             print("NO YOU CAN NOT BORROW THIS BOOK, ALL THE COPIES ARE IN DISTRIBUTION ALREADY!")
+            return False
 
     def borrowBook(self):
         pass
