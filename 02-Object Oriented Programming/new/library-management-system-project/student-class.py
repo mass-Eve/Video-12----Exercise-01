@@ -6,6 +6,7 @@ class StudentID:
         self.roll = int()
         self.gender = str()
         self.address = str()
+        self.sID = str()
 
     def createStudent(self):
         
@@ -27,6 +28,8 @@ class StudentID:
         add = input('Enter the address of the student :')
         self.address = add
 
+        self.assignStudentID()
+
     def updateDetails(self):
 
         # menu
@@ -47,20 +50,23 @@ class StudentID:
         
         def updateKaksha(self):
             newKaksha = input("Enter the new kaksha of the student : ")
-            self.name = newKaksha
+            self.kaksha = newKaksha
         
         def updateSection(self):
             newSec = input("Enter the new section of the student : ")
-            self.name = newSec
+            self.section = newSec
         
         def updateRoll(self):
             newRoll = input("Enter the new roll number of the student : ")
-            self.name = newRoll
+            self.roll = newRoll
         
         def updateGender(self):
             newGen = input("Enter the gender number of the student : ")
-            self.name = newGen
+            self.gender = newGen
         
         def updateAdd(self):
             newAdd = input("Enter the new house address of the student : ")
-            self.name = newAdd
+            self.address = newAdd
+
+    def assignStudentID(self):
+        self.sID = self.kaksha + self.section + self.roll + self.gender
