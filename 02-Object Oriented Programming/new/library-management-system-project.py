@@ -34,6 +34,47 @@ class Book:
 
     def updateBookDetails(self):
         
+        while(True):
+            # menu
+            def menu(self):
+                print("\t\t\t\tWHAT WOULD YOU LIKE TO UPDATE ?")
+                print("1. ENTER 1 TO UPDATE BOOK NAME")
+                print("2. ENTER 2 TO UPDATE AUTHOR's HOUSE NAME")
+                print("3. ENTER 3 TO UPDATE PUBLISHING HOUSE NAME")
+                print("4. ENTER 4 TO UPDATE GENRE OF THE BOOK")
+                print("5. ENTER 5 TO UPDATE THE PUBLISHING YEAR OF THE BOOK")
+                print("6. ENTER 6 TO UPDATE THE ISBN NUMBER OF THE BOOK")
+                print("7. ENTER 7 TO UPDATE THE SELLING PRICE OF THE BOOK")
+                print("8. ENTER 8 TO UPDATE THE TOTAL NUMBER OF COPIES OF THE BOOK AVAILABLE IN THE LIBRARY")
+                print("9. ENTER 9 TO UPDATE THE TOTAL NUMBER OF COPIES OF THE BOOK AVAILABLE TO BORROW")
+                print("10. ENTER 10 TO EXIT BOOK UPDATION MENU")
+
+                choice = int(input("What would you like to update ? : "))
+
+                match choice:
+                    case 1:
+                        updateName()
+                    case 2:
+                        updateAuthor()
+                    case 3:
+                        updatePublication()
+                    case 4:
+                        updateGenre()
+                    case 5:
+                        updateYear()
+                    case 6:
+                        updateISBN()
+                    case 7:
+                        updatePrice()
+                    case 8:
+                        updateTotalNoOfCopies()
+                    case 9:
+                        updateNoOfCopiesAvailableToBorrow()
+                    case 10:
+                        break
+                    case _:
+                        print("Check your input and try again later!")
+
         # update book name
         def updateName(self):
             newTitle = input("Enter the new title of the book : ")
