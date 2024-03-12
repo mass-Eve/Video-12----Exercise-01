@@ -11,15 +11,34 @@ class Book:
         self.quantities_available = int()
 
     def createBook(self):
+        bname = input("Enter The Book Name :")
         self.book_name = bname
+
+        ISBN = input("Enter The ISBN Number for the Book :")
         self.isbn_number = ISBN
+
+        price = input("Enter The Price Of The Book :")
         self.selling_price = price
+
+        writer = input("Enter The Name Of The Author Of The Book :")
         self.author = writer
+
+        book_genre = input("Enter The Genre Of The Book :")
         self.genre = book_genre
+
+        publish_year = input("Enter The Publishment Year Of The Book :")
         self.pub_year = publish_year
+
+        publication = input("Enter The Publication Publishing The Book :")
         self.publication_name = publication
+
+        total_number_of_copies = input("Enter The Total Number Of Copies Of The Book Available In The Library :")
         self.total_copies = total_number_of_copies
+
+        available_copies_amount = input("Enter The Total Number Of Copies Of The Book Available For Borrowing :")
         self.quantities_available = available_copies_amount
+
+        print("New Book Added Successfully In The Catalog")
 
     def displayBookDetails(self):
         print(f"BOOK NAME : {self.book_name}")
@@ -33,10 +52,9 @@ class Book:
         print(f"TOTAL COPIES AVAIABLE TO BORROW : {self.quantities_available}")
 
     def updateBookDetails(self):
-        
-        while(True):
+        def menu(self):
+            while(True):
             # menu
-            def menu(self):
                 print("\t\t\t\tWHAT WOULD YOU LIKE TO UPDATE ?")
                 print("1. ENTER 1 TO UPDATE BOOK NAME")
                 print("2. ENTER 2 TO UPDATE AUTHOR's HOUSE NAME")
@@ -136,3 +154,7 @@ class Book:
 
     def returnBook(self):
         pass
+
+one = Book()
+
+one.createBook()
