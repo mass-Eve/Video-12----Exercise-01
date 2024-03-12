@@ -10,14 +10,21 @@ class Book:
         self.total_copies = int()
         self.quantities_available = int()
 
+    def check_int(self, num: int) -> bool :
+        if (type(num) != int):
+            return False
+        else:
+            return True
+
     def createBook(self):
+        print("YOU ARE INSIDE CREATING A NEW BOOK")
+
         bname = input("Enter The Book Name :")
         self.book_name = bname
 
-        ISBN = input("Enter The ISBN Number for the Book :")
-        self.isbn_number = ISBN
+        ISBN = int(input("Enter The ISBN Number for the Book :"))
 
-        price = input("Enter The Price Of The Book :")
+        price = int(input("Enter The Price Of The Book :"))
         self.selling_price = price
 
         writer = input("Enter The Name Of The Author Of The Book :")
@@ -26,21 +33,21 @@ class Book:
         book_genre = input("Enter The Genre Of The Book :")
         self.genre = book_genre
 
-        publish_year = input("Enter The Publishment Year Of The Book :")
+        publish_year = int(input("Enter The Publishment Year Of The Book :"))
         self.pub_year = publish_year
 
         publication = input("Enter The Publication Publishing The Book :")
         self.publication_name = publication
 
-        total_number_of_copies = input("Enter The Total Number Of Copies Of The Book Available In The Library :")
+        total_number_of_copies = int(input("Enter The Total Number Of Copies Of The Book Available In The Library :"))
         self.total_copies = total_number_of_copies
 
-        available_copies_amount = input("Enter The Total Number Of Copies Of The Book Available For Borrowing :")
-        self.quantities_available = available_copies_amount
+        self.quantities_available = total_number_of_copies
 
         print("New Book Added Successfully In The Catalog")
 
     def displayBookDetails(self):
+        print("----------------------------------------------------------------------------")
         print(f"BOOK NAME : {self.book_name}")
         print(f"AUTHOR NAME : {self.author}")
         print(f"PUBLICATION : {self.publication_name}")
@@ -50,14 +57,15 @@ class Book:
         print(f"PRICE : {self.selling_price}")
         print(f"TOTAL COPIES AVAILABLE IN LIBRARY : {self.total_copies}")
         print(f"TOTAL COPIES AVAIABLE TO BORROW : {self.quantities_available}")
+        print("----------------------------------------------------------------------------")
 
     def updateBookDetails(self):
-        def menu(self):
+        def menu():
             while(True):
             # menu
                 print("\t\t\t\tWHAT WOULD YOU LIKE TO UPDATE ?")
                 print("1. ENTER 1 TO UPDATE BOOK NAME")
-                print("2. ENTER 2 TO UPDATE AUTHOR's HOUSE NAME")
+                print("2. ENTER 2 TO UPDATE AUTHOR's NAME")
                 print("3. ENTER 3 TO UPDATE PUBLISHING HOUSE NAME")
                 print("4. ENTER 4 TO UPDATE GENRE OF THE BOOK")
                 print("5. ENTER 5 TO UPDATE THE PUBLISHING YEAR OF THE BOOK")
@@ -94,60 +102,92 @@ class Book:
                         print("Check your input and try again later!")
 
         # update book name
-        def updateName(self):
+        def updateName():
+            print("------------------------------------------------------------------------------")
             newTitle = input("Enter the new title of the book : ")
             self.book_name = newTitle
             print("Book Title Updated Successfully........")
+            print("------------------------------------------------------------------------------")
 
         # update author name
-        def updateAuthor(self):
+        def updateAuthor():
+            print("------------------------------------------------------------------------------")
             newName = input("Enter the new author name : ")
             self.author = newName
+            print("Author Name Updated Successfully........")
+            print("------------------------------------------------------------------------------")
 
         # update publication house name
-        def updatePublication(self):
+        def updatePublication():
+            print("------------------------------------------------------------------------------")
             newPub = input("Enter the new publication name : ")
             self.publication = newPub
+            print("Publication Name Updated Successfully........")
+            print("------------------------------------------------------------------------------")
 
         # update genre of the book
-        def updateGenre(self):
+        def updateGenre():
             newGenre = input("Enter the updated value for genre : ")
             self.genre = newGenre
+            print("Book Genre Updated Successfully........")
 
         # update the publishing year
-        def updateYear(self):
+        def updateYear():
+            print("------------------------------------------------------------------------------")
             newYear = int(input("Enter the year of publishing : "))
             self.pub_year = newYear
+            print("Publishing Year Updated Successfully........")
+            print("------------------------------------------------------------------------------")
 
         # update the ISBN Code of the book
-        def updateISBN(self):
+        def updateISBN():
+            print("------------------------------------------------------------------------------")
             newISBN = int(input("Enter the correct value of ISBN : "))
-            SELF.isbn_number = newISBN
+            self.isbn_number = newISBN
+            print("Book ISBN Number Updated Successfully........")
+            print("------------------------------------------------------------------------------")
 
         # update the selling price of the book
-        def updatePrice(self):
+        def updatePrice():
+            print("------------------------------------------------------------------------------")
             newPrice = int(input("Enter the new price of the book : "))
             self.price = newPrice
+            print("Book Price Updated Successfully........")
+            print("------------------------------------------------------------------------------")
 
         # update total number of copies of the book
-        def updateTotalNoOfCopies(self):
+        def updateTotalNoOfCopies():
+            print("------------------------------------------------------------------------------")
             total = int(input("Enter the updated number of total copies of this book : "))
             self.total_copies = total
+            print("Book Capacity Updated Successfully........")
+            print("------------------------------------------------------------------------------")
 
         # update total number of copies of the book available for the people to borrow
-        def updateNoOfCopiesAvailableToBorrow(self):
+        def updateNoOfCopiesAvailableToBorrow():
+            print("------------------------------------------------------------------------------")
             total_available = int(input("Enter the total number of copies available to borrow : "))
             self.quantities_available = total_available
+            print("Book Availability Updated Successfully........")
+            print("------------------------------------------------------------------------------")
+
+        menu()
 
     def checkAvaiablility(self):
+        self.total_copies = 150
+        self.quantities_available = 1.0
         if (self.quantities_available > 0 and self.quantities_available <= self.total_copies):
             print(f'Total copies available to borrow are : {self.quantities_available}')
             print("YES YOU CAN BORROW THIS BOOK !")
             return True
-        else:
+
+        elif (self.quantities_available == 0):
             print(f'Total copies available to borrow are : {self.quantities_available}')
             print("NO YOU CAN NOT BORROW THIS BOOK, ALL THE COPIES ARE IN DISTRIBUTION ALREADY!")
             return False
+
+        else:
+            print("MANAGEMENT PROBLEM. PLEASE REPORT TO THE LIBRARIAN")
 
     def borrowBook(self):
         pass
@@ -158,3 +198,6 @@ class Book:
 one = Book()
 
 one.createBook()
+# one.displayBookDetails()
+# one.updateBookDetails()
+# one.checkAvaiablility()
