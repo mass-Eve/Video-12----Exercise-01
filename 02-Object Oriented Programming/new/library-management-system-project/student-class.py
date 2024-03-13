@@ -9,32 +9,36 @@ class StudentID:
         self.sID = str()
 
     def createStudent(self):
-        
-        sname = input('Enter the name of the student : ')
-        self.name = sname
-        
-        skaksha = input('Enter the kaksha of the student :')
-        self.kaksha = skaksha
-        
-        sec = input('Enter the section student :')
-        self.section = sec
-        
-        rollno = input('Enter the roll number of the student :')
-        self.roll = rollno
-        
-        sgender = input('Enter the gender of the student :')
-        self.gender = sgender
-        
-        add = input('Enter the address of the student :')
-        self.address = add
+        try:
+            sname = input('Enter the name of the student : ')
+            self.name = sname
+            
+            skaksha = input('Enter the kaksha of the student :')
+            self.kaksha = skaksha
+            
+            sec = input('Enter the section student :')
+            self.section = sec
+            
+            rollno = input('Enter the roll number of the student :')
+            self.roll = rollno
+            
+            sgender = input('Enter the gender of the student :')
+            self.gender = sgender
+            
+            add = input('Enter the address of the student :')
+            self.address = add
 
-        self.assignStudentID()
+            self.assignStudentID()
+
+        except Exception as e:
+            print(f"Student Can not be added because of the following error ~ {str(e)}")
 
     def updateDetails(self):
 
-        while(True):
-            # menu
-            def menu(self):
+        def menu(self):
+            while(True):
+                # menu
+                print("----------------------------------------------------------")
                 print("WHAT WOULD YOU LIKE TO UPDATE ?")
                 print("1. ENTER 1 TO UPDATE THE NAME OF THE STUDENT ")
                 print("2. ENTER 2 TO UPDATE THE KAKSHA OF THE STUDENT")
@@ -42,6 +46,7 @@ class StudentID:
                 print("4. ENTER 4 TO UPDATE THE ROLL NUMBER OF THE STUDENT")
                 print("5. ENTER 5 TO UPDATE THE GENDER OF THE STUDENT")
                 print("6. ENTER 6 TO UPDATE THE HOUSE ADDRESS OF THE STUDENT")
+                print("----------------------------------------------------------")
 
                 choice = int(input("~ "))
 
@@ -66,28 +71,49 @@ class StudentID:
                         print("Check your inputs and try again later")
 
         def updateName(self):
-            newName = input("Enter the new name of the student : ")
-            self.name = newName
+            try:
+                newName = input("Enter the new name of the student : ")
+                self.name = newName
+            except Exception as e:
+                print(f"Can not perforn updation because of the following error ~ {str(e)}")
         
         def updateKaksha(self):
-            newKaksha = input("Enter the new kaksha of the student : ")
-            self.kaksha = newKaksha
+            try:
+                newKaksha = input("Enter the new kaksha of the student : ")
+                self.kaksha = newKaksha
+            except Exception as e:
+                print(f"Can not perforn updation because of the following error ~ {str(e)}")
         
         def updateSection(self):
-            newSec = input("Enter the new section of the student : ")
-            self.section = newSec
+            try:
+                newSec = input("Enter the new section of the student : ")
+                self.section = newSec
+            except Exception as e:
+                print(f"Can not perforn updation because of the following error ~ {str(e)}")
         
         def updateRoll(self):
-            newRoll = input("Enter the new roll number of the student : ")
-            self.roll = newRoll
+            try:
+                newRoll = int(input("Enter the new roll number of the student : "))
+                self.roll = newRoll
+            except Exception as e:
+                print(f"Can not perforn updation because of the following error ~ {str(e)}")
         
         def updateGender(self):
-            newGen = input("Enter the gender number of the student : ")
-            self.gender = newGen
+            try:
+                newGen = input("Enter the gender number of the student : ")
+                self.gender = newGen
+            except Exception as e:
+                print(f"Can not perforn updation because of the following error ~ {str(e)}")
         
         def updateAdd(self):
-            newAdd = input("Enter the new house address of the student : ")
-            self.address = newAdd
+            try:
+                newAdd = input("Enter the new house address of the student : ")
+                self.address = newAdd
+            except Exception as e:
+                print(f"Can not perforn updation because of the following error ~ {str(e)}")
 
     def assignStudentID(self):
-        self.sID = self.kaksha + self.section + self.roll + self.gender
+        try:
+            self.sID = self.kaksha + self.section + self.roll + self.gender
+        except Exception as e:
+            print(f"Student ID can not be as assigned due to the following error ~ {str(e)}")
