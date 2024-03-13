@@ -10,12 +10,6 @@ class Book:
         self.total_copies = int()
         self.quantities_available = int()
 
-    def check_int(self, num: int) -> bool :
-        if (type(num) != int):
-            return False
-        else:
-            return True
-
     def createBook(self):
         print("YOU ARE INSIDE CREATING A NEW BOOK")
 
@@ -174,8 +168,6 @@ class Book:
         menu()
 
     def checkAvaiablility(self):
-        self.total_copies = 150
-        self.quantities_available = 1.0
         if (self.quantities_available > 0 and self.quantities_available <= self.total_copies):
             print(f'Total copies available to borrow are : {self.quantities_available}')
             print("YES YOU CAN BORROW THIS BOOK !")
