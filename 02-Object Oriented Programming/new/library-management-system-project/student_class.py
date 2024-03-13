@@ -7,6 +7,7 @@ class StudentID:
         self.gender = str()
         self.address = str()
         self.sID = str()
+        self.books_issued = []
 
     def createStudent(self):
         try:
