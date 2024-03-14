@@ -18,6 +18,7 @@ class Book:
             self.book_name = bname
 
             ISBN = int(input("Enter The ISBN Number for the Book :"))
+            self.isbn_number = ISBN
 
             price = int(input("Enter The Price Of The Book :"))
             self.selling_price = price
@@ -256,16 +257,3 @@ class Book:
             print("MANAGEMENT PROBLEM. PLEASE REPORT TO THE LIBRARIAN")
             print(str(e))
             print("------------------------------------------------------------------------------")
-
-    def borrowBook(self):
-        pass
-
-    def returnBook(self):
-        pass
-
-one = Book()
-
-# one.createBook()
-# one.displayBookDetails()
-# one.updateBookDetails()
-# one.checkAvaiablility()

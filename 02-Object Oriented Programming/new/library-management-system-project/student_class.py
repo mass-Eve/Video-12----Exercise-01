@@ -1,4 +1,6 @@
-class StudentID:
+from book_class import Book
+
+class StudentID(Book):
     def __init__(self):
         self.name = str()
         self.kaksha = str()
@@ -7,7 +9,7 @@ class StudentID:
         self.gender = str()
         self.address = str()
         self.sID = str()
-        self.books_issued = []
+        self.books_issued = [Book()] * 5
 
     def createStudent(self):
         try:
@@ -33,6 +35,11 @@ class StudentID:
 
         except Exception as e:
             print(f"Student Can not be added because of the following error ~ {str(e)}")
+
+    def showDetails(self):
+        print(f'{self.name}')
+        print(f'{self.kaksha} {self.section}')
+        print(f'{self.sID}')
 
     def updateDetails(self):
 
@@ -118,3 +125,33 @@ class StudentID:
             self.sID = self.kaksha + self.section + self.roll + self.gender
         except Exception as e:
             print(f"Student ID can not be as assigned due to the following error ~ {str(e)}")
+
+    def borrow_list(self):
+        books = len(self.books_issued)
+
+        if (books == 5):
+            print("You can not borrow any book. You have exceeded the limit.")
+            return False
+        elif (books >= 0 and books < 5):
+            print(f'You can borrow {books} books.')
+            return True
+        else:
+            print("MANAGEMENT PROBLEM")
+
+    def borrowBook(self):
+
+        if (self.borrow_list()):
+            print("YOU ARE IN THE CHECKOUT KIOSK.")
+            print('PLEASE CONFIRM YOUR DETAILS ~ ')
+
+            self.showDetails()
+
+            choice = input("Enter Y to confirm your details : ")
+
+            # if (choice = 'Y'):
+
+
+    def returnBook(self):
+        pass
+
+# s1 = StudentID()
